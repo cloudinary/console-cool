@@ -1,4 +1,5 @@
 const INSTRUCTION_STYLE = "font-family: serif; font-size: 1rem";
+const CODE_STYLE = "font-family: monospace";
 
 export default {
   "messages": {
@@ -8,7 +9,8 @@ export default {
     "2": {
       "content": [
         "Cool! you're a developer too!\nHow about trying some of our features?",
-        "To get started, create an instance of Cloudianry, for our demo cloud, and scroll to the demo image:"
+        ["You can type %chelp()%c", CODE_STYLE, INSTRUCTION_STYLE],
+        "To get started, create an instance of Cloudinary, for our demo cloud, and scroll to the demo image:"
       ],
       "code": [
         "cl = new cloudinary.Cloudinary({cloud_name: 'demo'})",
@@ -37,7 +39,8 @@ export default {
     },
     "help": {
       "content" : [
-        ["To get to the next step, simple type %cnext()%c", "font-family: monospace", INSTRUCTION_STYLE]
+        ["To get to the next step, simple type %cnext()%c", CODE_STYLE, INSTRUCTION_STYLE],
+        ["You can also jump to a specific step by type %cstep(x)%c", CODE_STYLE, INSTRUCTION_STYLE],
       ]
     }
   },
