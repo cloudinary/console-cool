@@ -82,18 +82,22 @@
 <script src="https://unpkg.com/cloudinary-core/cloudinary-core-shrinkwrap.js"></script>
 <script src="../dist/console-cool.js"></script>
 <script type="application/javascript">
-    Object.assign(window, consoleCool);
+  Object.assign(window, consoleCool);
+
   function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
   }
 
-  let divs = document.getElementsByClassName('random');
-  for (let i = 0; i < divs.length; i++) {
-    let image = document.createElement('img');
-    image.setAttribute('width', 600);
-    image.setAttribute('src', `https://picsum.photos/id/${getRandomInt(1000)}/700/400`);
-    divs[i].appendChild(image);
-  }
+  fetch("https://picsum.photos/v2/list").then(r => r.json()).then(list => {
+    let divs = document.getElementsByClassName('random');
+    for (let i = 0; i < divs.length; i++) {
+      let image = document.createElement('img');
+      image.setAttribute('width', 600);
+      image.setAttribute('src', list[i].download_url);
+      divs[i].appendChild(image);
+    }
+
+  });
   setScript(0);
   next()
 </script>
