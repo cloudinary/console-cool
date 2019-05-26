@@ -1,0 +1,20 @@
+{
+  "name": "console-cool",
+  "version": "1.0.0",
+  "description": "Offer a tutorial to users through the browser's console",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cloudinary",
+    "devrel",
+    "console",
+    "javascript"
+  ],
+  "author": "Amir Tocker",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.2"
+  }
+}
