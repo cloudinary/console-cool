@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Console cool tests</title>
+</head>
+<body>
+<div class="random">
+    <p>Sagas resistere!Pol, a bene elogium.Brevis, regius monss solite gratia de emeritis, rusticus nuptia.Hippotoxotas
+        mori!</p>
+    <p>Absolutios sunt homos de dexter sensorem.Devatios peregrinatione in rusticus antenna!
+        Superbus eposs ducunt ad eleates.Magnum, superbus messors absolute fallere de brevis, rusticus adiurator.Hercle,
+        pars noster!.</p>
+    <p>Flavum acipensers ducunt ad clinias.Orexis, fides, et diatria.
+        Ubi est secundus musa?Pol, amor!Armariums ire in velox sala!Barcass messis in regius hortus!</p>
+
+</div>
+<div class="random">
+    <p>Sagas resistere!Pol, a bene elogium.Brevis, regius monss solite gratia de emeritis, rusticus nuptia.Hippotoxotas
+        mori!</p>
+    <p>Absolutios sunt homos de dexter sensorem.Devatios peregrinatione in rusticus antenna!
+        Superbus eposs ducunt ad eleates.Magnum, superbus messors absolute fallere de brevis, rusticus adiurator.Hercle,
+        pars noster!.</p>
+    <p>Flavum acipensers ducunt ad clinias.Orexis, fides, et diatria.
+        Ubi est secundus musa?Pol, amor!Armariums ire in velox sala!Barcass messis in regius hortus!</p>
+
+</div>
+<div class="random">
+    <p>Sagas resistere!Pol, a bene elogium.Brevis, regius monss solite gratia de emeritis, rusticus nuptia.Hippotoxotas
+        mori!</p>
+    <p>Absolutios sunt homos de dexter sensorem.Devatios peregrinatione in rusticus antenna!
+        Superbus eposs ducunt ad eleates.Magnum, superbus messors absolute fallere de brevis, rusticus adiurator.Hercle,
+        pars noster!.</p>
+    <p>Flavum acipensers ducunt ad clinias.Orexis, fides, et diatria.
+        Ubi est secundus musa?Pol, amor!Armariums ire in velox sala!Barcass messis in regius hortus!</p>
+
+</div>
+<div class="random">
+    <p>Sagas resistere!Pol, a bene elogium.Brevis, regius monss solite gratia de emeritis, rusticus nuptia.Hippotoxotas
+        mori!</p>
+    <p>Absolutios sunt homos de dexter sensorem.Devatios peregrinatione in rusticus antenna!
+        Superbus eposs ducunt ad eleates.Magnum, superbus messors absolute fallere de brevis, rusticus adiurator.Hercle,
+        pars noster!.</p>
+    <p>Flavum acipensers ducunt ad clinias.Orexis, fides, et diatria.
+        Ubi est secundus musa?Pol, amor!Armariums ire in velox sala!Barcass messis in regius hortus!</p>
+
+</div>
+<div class="random">
+    <p>Sagas resistere!Pol, a bene elogium.Brevis, regius monss solite gratia de emeritis, rusticus nuptia.Hippotoxotas
+        mori!</p>
+    <p>Absolutios sunt homos de dexter sensorem.Devatios peregrinatione in rusticus antenna!
+        Superbus eposs ducunt ad eleates.Magnum, superbus messors absolute fallere de brevis, rusticus adiurator.Hercle,
+        pars noster!.</p>
+    <p>Flavum acipensers ducunt ad clinias.Orexis, fides, et diatria.
+        Ubi est secundus musa?Pol, amor!Armariums ire in velox sala!Barcass messis in regius hortus!</p>
+
+</div>
+<div class="random">
+    <p>Sagas resistere!Pol, a bene elogium.Brevis, regius monss solite gratia de emeritis, rusticus nuptia.Hippotoxotas
+        mori!</p>
+    <p>Absolutios sunt homos de dexter sensorem.Devatios peregrinatione in rusticus antenna!
+        Superbus eposs ducunt ad eleates.Magnum, superbus messors absolute fallere de brevis, rusticus adiurator.Hercle,
+        pars noster!.</p>
+    <p>Flavum acipensers ducunt ad clinias.Orexis, fides, et diatria.
+        Ubi est secundus musa?Pol, amor!Armariums ire in velox sala!Barcass messis in regius hortus!</p>
+
+</div>
+<div class="random">
+    <p>Sagas resistere!Pol, a bene elogium.Brevis, regius monss solite gratia de emeritis, rusticus nuptia.Hippotoxotas
+        mori!</p>
+    <p>Absolutios sunt homos de dexter sensorem.Devatios peregrinatione in rusticus antenna!
+        Superbus eposs ducunt ad eleates.Magnum, superbus messors absolute fallere de brevis, rusticus adiurator.Hercle,
+        pars noster!.</p>
+    <p>Flavum acipensers ducunt ad clinias.Orexis, fides, et diatria.
+        Ubi est secundus musa?Pol, amor!Armariums ire in velox sala!Barcass messis in regius hortus!</p>
+
+</div>
+
+<div>
+    <img src="https://res.cloudinary.com/demo/image/upload/woman" id="imagine">
+</div>
+<script src="https://unpkg.com/cloudinary-core/cloudinary-core-shrinkwrap.js"></script>
+<script src="../dist/console-cool.js"></script>
+<script type="application/javascript">
+    Object.assign(window, consoleCool);
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+  }
+
+  let divs = document.getElementsByClassName('random');
+  for (let i = 0; i < divs.length; i++) {
+    let image = document.createElement('img');
+    image.setAttribute('width', 600);
+    image.setAttribute('src', `https://picsum.photos/id/${getRandomInt(1000)}/700/400`);
+    divs[i].appendChild(image);
+  }
+  setScript(0);
+  next()
+</script>
+</body>
+</html>
