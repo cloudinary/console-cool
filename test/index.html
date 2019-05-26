@@ -77,13 +77,14 @@
 </div>
 
 <div>
-    <img src="https://res.cloudinary.com/demo/image/upload/woman" id="imagine">
+    <img src="https://res.cloudinary.com/demo/image/upload/boy-and-dog" id="imagine">
 </div>
 <script src="https://unpkg.com/cloudinary-core/cloudinary-core-shrinkwrap.js"></script>
+<script src="./dist/messages.js"></script>
 <script src="../dist/console-cool.js"></script>
 <script type="application/javascript">
   Object.assign(window, consoleCool);
-
+    setMessages(messages);
   function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
   }

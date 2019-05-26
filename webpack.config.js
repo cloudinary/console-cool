@@ -1,4 +1,6 @@
-module.exports = {
+const path = require('path');
+
+module.exports = [{
   mode: "development",
   entry: "./index.js",
   output: {
@@ -9,4 +11,18 @@ module.exports = {
   },
   target: "web",
   devtool: "source-map"
-};
+},
+  {
+    mode: "development",
+    entry: "./test/messages",
+    output: {
+      library: 'messages',
+      libraryTarget: "var",
+      // libraryExport: './index.js',
+      filename: "messages.js",
+      path: path.resolve(__dirname, 'test/dist')
+    },
+    target: "web",
+    devtool: "source-map"
+
+  }];
